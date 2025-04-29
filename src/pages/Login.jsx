@@ -4,7 +4,7 @@ const Login = () => {
   return (
     <div className='form-container'>
       <form className='form-box'>
-        <h2>Login Page</h2>
+        <h2>Login to your Account</h2>
         <input type='email' placeholder='Email' required />
         <input type='password' placeholder='Password' required />
         <button type='submit'>Sign In</button>
