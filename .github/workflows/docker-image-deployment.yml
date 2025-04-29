@@ -37,3 +37,6 @@ jobs:
     - name: Push Docker image to Docker Hub
       run: docker push ${{ secrets.DOCKER_USERNAME }}/env_test_frontend:latest
 
+    - name: Trigger Vercel Deployment
+      run: curl -X POST "${{ secrets.VERCEL_DEPLOY_HOOK_URL }}"
+
