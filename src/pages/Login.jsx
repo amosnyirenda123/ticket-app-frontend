@@ -1,5 +1,6 @@
 import "../styles/Login.css";
 import { useState } from "react";
+import axios from "axios";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -7,7 +8,7 @@ const Login = () => {
 
   const handleSubmit = () => {
     e.preventDefault();
-    const response = axios.post("http://localhost:8000/api/auth/login", {
+    const response = axios.post("http://localhost:8000/ap/login", {
       email,
       password,
     });
