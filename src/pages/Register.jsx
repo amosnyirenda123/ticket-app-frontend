@@ -47,7 +47,7 @@ const Register = () => {
   return (
     <div className="form-container">
       <form className="form-box" onSubmit={handleSubmit}>
-        <h2>Register</h2>
+        <h2>Register gjhghgjg</h2>
         <input
           type="text"
           placeholder="Full Name"
